@@ -1,0 +1,107 @@
+Git Note:
+
+
+most cmd checking list:   git --help
+
+/*check the status of files*/
+git status
+
+/*add a specific file into stage */
+git add XX
+
+
+/*add all the files into stage  space between add and dot*/
+git add .  
+
+/*check the different after modify */
+git diff
+
+/*remove file from the staging to working file*/
+git rm --cached xxx
+
+/*remove file from the staging and working file*/
+git rm xxx
+
+/*commit the file to repository */
+git commit -m "message...."
+
+/*Check the list of repository*/
+git log
+
+
+
+
+
+
+
+/*版本回退 根据commit的ID 返回其中一个想要的版本从仓库到本地文件夹*/
+git reset --hard commitID
+
+
+/*  查看分支  */
+
+git branch
+
+/* 创建一个分支 */
+git branch XXX
+
+/* 切换分支 */
+git checkout XX
+
+/*合并分支， 把branch的分支合并到master上面去*/
+
+1 先切换到master分支
+
+git checkout master
+
+2 把分支合并到主分支 
+
+git merge branch-name
+
+
+/* 删除分支 */
+
+git branch -d XXX
+
+git branch -D XXX （强制删除）
+
+=================git to gitHub===========================
+
+EX:
+git remote add origin https://github.com/KantTao/Text.git
+
+
+/* 列出所有的remote */
+
+git remote
+
+/*把master branch 推到 origin(当前GitHub的仓库) */
+
+Git push origin master
+
+
+/*从GitHub到本地文件夹*/
+
+git clone XXXXXX
+
+
+/* GitHub 密钥 */
+
+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
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
